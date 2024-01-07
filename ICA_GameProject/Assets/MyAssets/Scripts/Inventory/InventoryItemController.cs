@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class InventoryItemController : MonoBehaviour
 {
+    
     [SerializeField]
     private Image background;
 

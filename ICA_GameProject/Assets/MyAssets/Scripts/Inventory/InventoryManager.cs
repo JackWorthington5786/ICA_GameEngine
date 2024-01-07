@@ -5,9 +5,11 @@ using UnityEngine;
 /// </summary>
 public class InventoryManager : MonoBehaviour
 {
+    //inventory
     [SerializeField]
     private Inventory inventory;
 
+    //event to listen to, for item pickup events
     public void HandleItemPickup(ItemData data)
     {
         //if we have this item then count++

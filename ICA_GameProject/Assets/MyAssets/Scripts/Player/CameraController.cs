@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    //target tracking data
     public Transform target; 
     public float distance ; 
     public float height ; 
     public float rotationSpeed ; 
-
     private float currentRotation = 0f;
 
+    //on start, check if target is assigned
     void Start()
     {
         if (target == null)
@@ -19,6 +20,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    //on update, check for input and calculate camera position
     void Update()
     {
         // Handle rotation based on left and right arrow keys.
@@ -28,6 +30,7 @@ public class CameraController : MonoBehaviour
         CalculateCameraPosition();
     }
 
+    // Handle rotation based on left and right arrow keys.
     void HandleRotationInput()
     {
         // Rotate camera left.
@@ -43,6 +46,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    // Calculate the position of the camera.
     void CalculateCameraPosition()
     {
         if (target != null)

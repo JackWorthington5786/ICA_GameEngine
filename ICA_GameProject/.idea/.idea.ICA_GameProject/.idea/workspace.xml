@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9b80389-315f-4636-bac3-eb2806021e33" name="Changes" comment="" />
+    <list default="true" id="c9b80389-315f-4636-bac3-eb2806021e33" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ICA_GameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ICA_GameProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Enemy/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Environment/DoorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Environment/DoorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Environment/RoofController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Environment/RoofController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Environment/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Environment/RoomController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/GeneratorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/GeneratorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Inventory/InventoryItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Inventory/InventoryItemController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Inventory/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Inventory/PickupBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Inventory/PickupBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Item/ItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Item/ItemData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Item/ItemMovment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Item/ItemMovment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Player/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Player/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAssets/Scripts/PuzzelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAssets/Scripts/PuzzelController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,6 +135,8 @@
       <workItem from="1704645458674" duration="48000" />
       <workItem from="1704645949415" duration="4537000" />
       <workItem from="1704658267932" duration="640000" />
+      <workItem from="1704662600444" duration="1000" />
+      <workItem from="1704662653507" duration="1140000" />
     </task>
     <servers />
   </component>

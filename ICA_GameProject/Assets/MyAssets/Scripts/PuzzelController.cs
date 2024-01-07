@@ -5,31 +5,40 @@ using UnityEngine.UI;
 
 public class PuzzelController : MonoBehaviour
 {
+    //canvas for the puzzle
     public GameObject canvas;
     
+    //buttons for the puzzle
     [Header("UI elements")]
     public Button button1;
     public Button button2;
     public Button button3;
     public Button button4;
     
+    //indicators for the buttons
     public GameObject[] indicators;
     
+    //panels for the puzzle
     public GameObject[] panels;
     public Color defaultColor = Color.white;
     public Color activeColor = Color.green;
 
+    //doors coreesponding to the panels variables
     [Header("Doors")]
     public GameObject[] doors;
     public float displacment;
     
+    //what doors are opened for each button
     [Header("Combos")]
     public int[] combo1;
     public int[] combo2;
     public int[] combo3;
     public int[] combo4;
+    
+    //on start hide the buttons and canvas
         void Start()
         {
+            //hide the buttons
             button1.gameObject.SetActive(false);
             button2.gameObject.SetActive(false);
             button3.gameObject.SetActive(false);
@@ -41,18 +50,18 @@ public class PuzzelController : MonoBehaviour
             button3.onClick.AddListener(() => ToggleDoors(combo3, 3));
             button4.onClick.AddListener(() => ToggleDoors(combo4, 4));
             
-
             // Set the default color for all panels
             SetstartingColor();
             //hide the canvas
             CloseCanvas();
         }
 
-
+        //when the player enters the trigger show the buttons
         void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
             {
+                //show the canvas
                 OpenCanvas();
                 //show buttons
                 button1.gameObject.SetActive(true);
@@ -62,8 +71,10 @@ public class PuzzelController : MonoBehaviour
             }
         }
         
+        //when the player exits the trigger hide the buttons (this allows me to use the same canvas for multiple puzzles parts)
         void OnTriggerExit(Collider other)
         {
+            //hide the canvas
             if (other.CompareTag("Player"))
             {
                 button1.gameObject.SetActive(false);
@@ -73,6 +84,7 @@ public class PuzzelController : MonoBehaviour
             }
         }
     
+        // Update is called once per frame
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -81,6 +93,7 @@ public class PuzzelController : MonoBehaviour
             }
         }
     
+        // Open and close the canvas
         void OpenCanvas()
         {
             if (canvas != null)
@@ -90,6 +103,7 @@ public class PuzzelController : MonoBehaviour
             }
         }
     
+        // Close the canvas
         void CloseCanvas()
         {
             if (canvas != null)
@@ -99,7 +113,7 @@ public class PuzzelController : MonoBehaviour
             }
         }
     
-        
+        // Toggle the doors based on the button pressed
         void ToggleDoors(int[] panelIndices, int buttonIndex)
         {   
             // Toggle the color of the indicator
@@ -122,18 +136,16 @@ public class PuzzelController : MonoBehaviour
             }
         }
         
+        // Move the door up or down based on the panel's state
         void MoveDoor(int doorIndex, bool isActive)
         {
             if (doorIndex >= 0 && doorIndex < doors.Length)
             {
                 doors[doorIndex].transform.position += new Vector3(0f, isActive ? displacment : -displacment, 0f);
-
-
             }
         }
         
-        
-        
+        // Set the default color for all panels
         void SetstartingColor()
         {
             foreach (GameObject panel in panels)

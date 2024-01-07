@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class RoofController : MonoBehaviour
 {
+    //roof controller
     private float originalY;
     private Renderer objectRenderer;
 
-    public float alphaMultiplier = 0.1f; // Adjust this value to control the rate of alpha decrease.
+    public float alphaMultiplier = 0.1f; 
 
+    //on start get the original y position and the renderer
     void Start()
     {
         originalY = transform.position.y;
@@ -20,6 +22,7 @@ public class RoofController : MonoBehaviour
         }
     }
 
+    //on update check if the y position is greater than the original y value
     void Update()
     {
         float currentY = transform.position.y;
@@ -36,6 +39,7 @@ public class RoofController : MonoBehaviour
         }
     }
 
+    //update the alpha - attempt to make roof transparent when player is under it
     void UpdateAlpha(float alpha)
     {
         Color objectColor = objectRenderer.material.color;

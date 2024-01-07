@@ -3,15 +3,18 @@ using UnityEngine;
 
 public class PickupBehaviour : MonoBehaviour
 {
+    //event to raise when we pick up an item
     [SerializeField]
     private ItemDataGameEvent OnPickup;
 
+    //tag of the object we want to pick up
     [SerializeField]
     private string targetTag = "Keycard";
     
     //have key bool
     [SerializeField] public bool hasKey = false;
 
+    //when we enter the trigger of the pickup object (collide with it) 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals(targetTag))

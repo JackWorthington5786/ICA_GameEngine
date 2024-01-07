@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class GeneratorController : MonoBehaviour
 {
+    //variables
     public GameObject canvas;
     public GameObject orb;
     public Button button;
 
+    //on start hide the canvas and orb
     void Start()
     {
         CloseCanvas();
@@ -19,6 +21,7 @@ public class GeneratorController : MonoBehaviour
         orb.SetActive(false);
     }
     
+    //close the canvas
     void CloseCanvas()
     {
         if (canvas != null)
@@ -28,6 +31,7 @@ public class GeneratorController : MonoBehaviour
         }
     }
     
+    //open the canvas when the player enters the trigger
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -36,6 +40,7 @@ public class GeneratorController : MonoBehaviour
         }
     }
     
+    //open the canvas 
     void OpenCanvas()
     {
         if (canvas != null)
@@ -45,6 +50,7 @@ public class GeneratorController : MonoBehaviour
         }
     }
     
+    //toggle the generator on and off
     void ToggleGen()
     {
         //show the orb
