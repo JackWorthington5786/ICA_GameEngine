@@ -1,5 +1,7 @@
 # ICA_GameEngine
 
+Repo: https://github.com/JackWorthington5786/ICA_GameEngine.git
+
 Thisrd Party stuff
 
 Robot Kyle - https://assetstore.unity.com/packages/3d/characters/robots/robot-kyle-urp-4696#description - 20/12/2023
